@@ -38,9 +38,16 @@ The ND MCP server authenticates with **static headers **: `X-Nd-Apikey` + `X-Nd-
 
 3. The **Manage API keys** dialog opens, listing any existing keys (description, annotations, masked key value). Click **+ Add API key** at the bottom of the list.
 4. In the **Create API key** dialog, enter an optional **Description** (e.g. `codex-mcp`). Annotations are optional. Click **Save**.
-5. A **Copy API key** dialog appears with the full key value and a note that this is the only time it is shown. Click **Copy** (a *Copy to clipboard* tooltip confirms), then **Close**.
+  ![Application screenshot](./img2.png)
+ 
+
+6. A **Copy API key** dialog appears with the full key value and a note that this is the only time it is shown. Click **Copy** (a *Copy to clipboard* tooltip confirms), then **Close**.
    > ⚠️ The key value cannot be retrieved again — only its masked form appears in the list afterwards. If you lose it, delete the key and create a new one.
-6. Back in **Manage API keys**, the new key now appears in the list with a masked value. Click **Done**.
+
+     ![Application screenshot](./img3.png)
+   
+7. Back in **Manage API keys**, the new key now appears in the list with a masked value. Click **Done**.
+    ![Application screenshot](./img4.png)
 
 The copied key goes into `config.toml` in step 4.
 

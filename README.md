@@ -118,7 +118,7 @@ url = "https://<your-ND-IP>/api/v1/mcp"
 http_headers = { "X-Nd-Apikey" = "<your-api-key>", "X-Nd-Username" = "admin" }
 ```
 
-Three rules that will save you hours:
+Few things to keep in mind:
 
 1. **Do NOT add `bearer_token_env_var` — not even empty.** Its mere *presence* blocks MCP initialization: Codex sees the field and attempts a Bearer flow that ND does not support. Omit the line entirely.
 2. **No `Authorization` header.** ND auth is static headers only; adding Bearer/Authorization does not fall back gracefully.

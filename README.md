@@ -29,7 +29,7 @@ Step-by-step guide to connect the **OpenAI Codex CLI** to the **read-only MCP se
 
 ## 2. Generate an ND API Key
 
-The ND MCP server authenticates with **static headers only**: `X-Nd-Apikey` + `X-Nd-Username`. There is **no Bearer token and no `Authorization` header** anywhere in this flow.
+The ND MCP server authenticates with **static headers **: `X-Nd-Apikey` + `X-Nd-Username`. There is **no Bearer token and no `Authorization` header**  in this flow.
 
 1. Log in to the ND web UI as your admin user.
 2. Click the **user dropdown** in the top-right corner of the header (shows your username, e.g. `admin`). In the dropdown — below *User preferences* and *Change password* — click **Manage API keys**.

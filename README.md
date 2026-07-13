@@ -33,21 +33,23 @@ The ND MCP server authenticates with **static headers **: `X-Nd-Apikey` + `X-Nd-
 
 1. Log in to the ND web UI as your admin user.
 2. Click the **user dropdown** in the top-right corner of the header (shows your username, e.g. `admin`). In the dropdown — below *User preferences* and *Change password* — click **Manage API keys**.
- ## Screenshot
- ![Application screenshot](./img1.png)
+ 
+   ![Application screenshot](./img1.png)
 
 3. The **Manage API keys** dialog opens, listing any existing keys (description, annotations, masked key value). Click **+ Add API key** at the bottom of the list.
 4. In the **Create API key** dialog, enter an optional **Description** (e.g. `codex-mcp`). Annotations are optional. Click **Save**.
-  ![Application screenshot](./img2.png)
+ 
+   ![Application screenshot](./img3.png)
  
 
 6. A **Copy API key** dialog appears with the full key value and a note that this is the only time it is shown. Click **Copy** (a *Copy to clipboard* tooltip confirms), then **Close**.
    > ⚠️ The key value cannot be retrieved again — only its masked form appears in the list afterwards. If you lose it, delete the key and create a new one.
 
-     ![Application screenshot](./img3.png)
+   ![Application screenshot](./img4.png)
    
 7. Back in **Manage API keys**, the new key now appears in the list with a masked value. Click **Done**.
-    ![Application screenshot](./img4.png)
+
+   ![Application screenshot](./img2.png)
 
 The copied key goes into `config.toml` in step 4.
 

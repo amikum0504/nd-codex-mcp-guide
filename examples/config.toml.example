@@ -1,0 +1,10 @@
+# ~/.codex/config.toml — ND built-in MCP server (read-only)
+#
+# RULES:
+#   1. Do NOT add bearer_token_env_var (not even empty) — it blocks initialization.
+#   2. No Authorization header. ND auth = static headers only.
+#   3. Full Cmd+Q restart of Codex after editing this file.
+
+[mcp_servers.nd-mcp-server]
+url = "https://<your-ND-IP>/api/v1/mcp"
+http_headers = { "X-Nd-Apikey" = "<your-api-key>", "X-Nd-Username" = "admin" }

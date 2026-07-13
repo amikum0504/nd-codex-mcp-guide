@@ -1,0 +1,7 @@
+# Never commit credentials or certs
+*.pem
+*.der
+*.key
+config.toml
+.env
+.DS_Store

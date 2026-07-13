@@ -199,7 +199,6 @@ Work through these in order — each maps back to a step above:
 | Tools missing after a config edit | Stale in-memory session | Full quit + reopen (§5) |
 | Auth or OAuth error reported | TLS trust or header issue upstream of auth | Run the `curl` check (§3.4) to isolate whether the problem is TLS, reachability, or the API key |
 | "Auth unsupported / Enabled" in MCP panel | Nothing — this is the healthy state | Stop debugging |
-| Tool 3 returns nothing for your fabric | `fabricType` defaulted to ACI | Ask the agent to pass `fabricType` for NX-OS |
 
 Also in this repo: [`examples/config.toml.example`](examples/config.toml.example) and [`examples/verify.sh`](examples/verify.sh) (runs the §3.4 checks in one command).
 

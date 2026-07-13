@@ -1,8 +1,7 @@
-# Connecting OpenAI Codex to the Cisco Nexus Dashboard (ND 4.2) Built-in MCP Server
+# Connecting OpenAI Codex to the Cisco Nexus Dashboard (ND 4.3+) Built-in MCP Server
 
 Step-by-step guide to connect the **OpenAI Codex CLI** to the **read-only MCP server that ships natively with Nexus Dashboard 4.2**, so an LLM agent can query fabric health, anomalies, topology, and AI/ML job telemetry conversationally.
 
-> **Why this guide exists:** the official ND PoC documentation targets Cursor/Windsurf (`mcp.json` with `url`, `type`, `headers`). Codex uses a **different config format (`config.toml`)**, a **different TLS stack (native OS TLS, not Node)**, and **different auth configuration rules**. Every step below was validated against a live ND 4.2 setup.
 
 ---
 
@@ -21,9 +20,9 @@ Step-by-step guide to connect the **OpenAI Codex CLI** to the **read-only MCP se
 
 ## 1. Prerequisites
 
-- Nexus Dashboard **4.2** (PoC build) reachable over HTTPS from your workstation
+- Nexus Dashboard **4.3**  reachable over HTTPS from your workstation
 - Fabrics onboarded on ND
-- OpenAI Codex CLI installed
+- OpenAI Codex  installed
 - `curl` and `openssl` available (used to verify connectivity and certificates at each step)
 
 ---
@@ -203,5 +202,4 @@ Also in this repo: [`examples/config.toml.example`](examples/config.toml.example
 
 ## References
 
-- Cisco ND 4.2 MCP PoC documentation (internal)
 - [Model Context Protocol](https://modelcontextprotocol.io/)
